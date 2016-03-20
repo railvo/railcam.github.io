@@ -1,3 +1,3 @@
-# railvo.github.io
+# railcam.github.io
 
 Static pages for railcam.org
