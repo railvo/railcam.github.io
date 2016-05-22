@@ -108,7 +108,7 @@ Official site: <a href="http://www.rhune.com/uk/index.aspx">Le Train de la Rhune
 <script language="javascript">
 line = {"features": [{"geometry": {"coordinates": [[-1.63526, 43.3093013], [-1.6351153, 43.3092683], [-1.6346722, 43.3091481], [-1.6344121, 43.3091248], [-1.6333506, 43.3092049], [-1.6309064, 43.3095835], [-1.6307026, 43.3095796], [-1.629206, 43.3093473], [-1.6290371, 43.3093337], [-1.6273365, 43.3093864], [-1.6260299, 43.3094872], [-1.6250571, 43.3094664], [-1.6247268, 43.3095347], [-1.6245256, 43.3096264], [-1.6243539, 43.3097845], [-1.6242493, 43.3099426], [-1.6242037, 43.3100851], [-1.6241984, 43.3102237], [-1.6242279, 43.3103583], [-1.624303, 43.3105164], [-1.6256387, 43.3120153], [-1.6262851, 43.3129775], [-1.6263441, 43.3131004], [-1.6263951, 43.3133541], [-1.6263173, 43.3135805], [-1.626202, 43.3137405], [-1.6260196, 43.3138654], [-1.6257621, 43.3139806], [-1.6245043, 43.3143084], [-1.624374, 43.3143418], [-1.6235432, 43.3145549], [-1.6232822, 43.3145686], [-1.6208327, 43.3143083], [-1.6199689, 43.3140779], [-1.6194144, 43.3139869], [-1.6180396, 43.3137893], [-1.6177884, 43.3137532], [-1.6166337, 43.3137099], [-1.6154759, 43.3138405], [-1.6151908, 43.3139098], [-1.6149958, 43.3140202], [-1.6145723, 43.3143872], [-1.6143659, 43.3144835], [-1.6141453, 43.3145418], [-1.6139663, 43.3145596], [-1.6133268, 43.3145365], [-1.613007, 43.3145746], [-1.6127424, 43.3146637], [-1.6125309, 43.3148082], [-1.6116962, 43.3160135], [-1.6105136, 43.316998], [-1.6097476, 43.3177267], [-1.6092193, 43.3183393], [-1.6082807, 43.3196557], [-1.6074666, 43.3212042], [-1.6071096, 43.3217024], [-1.6067252, 43.322114], [-1.606538, 43.3222742], [-1.6047008, 43.323345], [-1.6040241, 43.3239361], [-1.6038499, 43.3240519], [-1.6035467, 43.324158], [-1.6026095, 43.3243253], [-1.6022867, 43.3243012], [-1.60194, 43.3242355], [-1.6016024, 43.3242744], [-1.6012919, 43.3243609], [-1.6011379, 43.3244454], [-1.6009998, 43.3245584], [-1.6008472, 43.3247797], [-1.6008133, 43.32501], [-1.6008178, 43.3251204]], "type": "LineString"}, "properties": {}, "type": "Feature"}], "type": "FeatureCollection"}
 var map = L.map('map').setView([0,0],13);
-var mqLayer = L.tileLayer("http://otile{s}.mqcdn.com/tiles/1.0.0/osm/{z}/{x}/{y}.png", {subdomains:"1234",attribution:"&copy; <a href='http://www.openstreetmap.org/'>OpenStreetMap</a> and contributors, under an <a href='http://www.openstreetmap.org/copyright' title='ODbL'>open license</a>. Tiles Courtesy of <a href='http://www.mapquest.com/'>MapQuest</a> <img src='http://developer.mapquest.com/content/osm/mq_logo.png'>"})
+var mqLayer = L.tileLayer("http://{s}.tile.opentopomap.org/{z}/{x}/{y}.png", {maxZoom: 17, subdomains:"abc",attribution:"Map data: &copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>, <a href='http://viewfinderpanoramas.org'>SRTM</a> | Map style: &copy; <a href='https://opentopomap.org'>OpenTopoMap</a> (<a href='https://creativecommons.org/licenses/by-sa/3.0/'>CC-BY-SA</a>)"})
 mqLayer.addTo(map);
 map.attributionControl.setPrefix('');
 var geojsonLayer = L.geoJson(line,{style:{"color":"#0000ff","weight":4,"opacity":0.8}}).addTo(map);
@@ -205,6 +205,11 @@ map.fitBounds(geojsonLayer.getBounds());
         <i class="fa fa-tag fa-fw fa-lg"></i>italy
     </a>
 </span>
+<span class="tag-3">
+    <a href="/tag/karst.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>karst
+    </a>
+</span>
 <span class="tag-4">
     <a href="/tag/mallorca.html">
         <i class="fa fa-tag fa-fw fa-lg"></i>mallorca
@@ -226,6 +231,11 @@ map.fitBounds(geojsonLayer.getBounds());
     </a>
 </span>
 <span class="tag-4">
+    <a href="/tag/new-zealand.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>new zealand
+    </a>
+</span>
+<span class="tag-4">
     <a href="/tag/norway.html">
         <i class="fa fa-tag fa-fw fa-lg"></i>norway
     </a>
@@ -241,6 +251,11 @@ map.fitBounds(geojsonLayer.getBounds());
     </a>
 </span>
 <span class="tag-4">
+    <a href="/tag/slovenia.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>slovenia
+    </a>
+</span>
+<span class="tag-4">
     <a href="/tag/spain.html">
         <i class="fa fa-tag fa-fw fa-lg"></i>spain
     </a>
@@ -248,6 +263,11 @@ map.fitBounds(geojsonLayer.getBounds());
 <span class="tag-4">
     <a href="/tag/steam.html">
         <i class="fa fa-tag fa-fw fa-lg"></i>steam
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/suburban.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>suburban
     </a>
 </span>
 <span class="tag-2">
